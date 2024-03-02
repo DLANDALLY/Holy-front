@@ -1,1 +1,35 @@
-<p>menu works!</p>
+<div class="row menu">
+    <div class="col xs1">
+        <a routerLink="/galerie">
+            <img src="assets/logo.png" alt="logo" width="150">
+        </a>
+    </div>
+    <div class="col xs10"></div>
+
+    <div class="col xs1">
+        <button class="menuButton" mat-icon-button matTooltip="Basic"  [matMenuTriggerFor]="menu"
+            aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        
+        <mat-menu #menu="matMenu" color="primary">
+            <button mat-menu-item routerLink="/galerie">
+                <mat-icon>insert_photo</mat-icon>
+                <span>Galerie</span>
+            </button>
+            <button mat-menu-item routerLink="/apropos">
+                <mat-icon>account_box</mat-icon>
+                <span>A propos</span>
+            </button>
+            <button mat-menu-item routerLink="/contact">
+                <mat-icon>forum</mat-icon>
+                <span>contact</span>
+            </button>
+            <button mat-menu-item routerLink="/contact">
+                <mat-icon>voicemail</mat-icon>
+                <span>login</span>
+            </button>
+        </mat-menu>
+    </div>
+
+</div>

@@ -9,9 +9,19 @@ import { LoginComponent } from "./pages/login/login.component";
 import { NotFoundComponent } from "./pages/not-found/not-found.component";
 import { SignupComponent } from "./pages/signup/signup.component";
 import { AppRoutingModule } from "./app-routing.module";
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
-  declarations: [
+  declarations: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    MatIconModule,
+    
+  ],
+  providers: [
     AppComponent,
     MenuComponent,
     GalerieComponent,
@@ -20,12 +30,8 @@ import { AppRoutingModule } from "./app-routing.module";
     LoginComponent,
     NotFoundComponent,
     SignupComponent,
+    MatIconModule
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
   //bootstrap: [AppComponent]
 })
 export class AppModule { }
