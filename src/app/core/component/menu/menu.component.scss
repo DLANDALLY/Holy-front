@@ -59,3 +59,30 @@ div {
     background-color: #7F4A1B;
 }
 
+//Menu temporaire
+a {
+    list-style-type: none;
+    display: inline-block;
+    color:#7F4A1B;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.tempMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    button {
+        background-color: black;
+        text-decoration-style: none;
+    }
+    button:hover{
+        background-color: #7f4a1b42;
+    }
+}

@@ -1,15 +1,34 @@
 <div class="row menu">
     <div class="col xs1">
-        <a routerLink="/galerie">
+        <a routerLink="">
             <img src="assets/logo.png" alt="logo" width="150">
         </a>
     </div>
-    <div class="col xs10"></div>
 
+        <!-- Menu temporaire -->
+
+ 
+    <div class="col xs8 tempMenu">
+        <button mat-button>
+            <a routerLink="">Galerie</a>
+        </button>
+        <button mat-button>
+            <a routerLink="about">A propos</a>
+        </button>
+        <button mat-button>
+            <a routerLink="contact">contact</a>
+        </button>
+        <button mat-button>
+            <a routerLink="login">login</a>
+        </button>
+    </div>
+
+    <div class="col xs2"></div>
+    
     <div class="col xs1">
         <button class="menuButton" mat-icon-button matTooltip="Basic"  [matMenuTriggerFor]="menu"
-            aria-label="Example icon-button with a menu">
-            <mat-icon>more_vert</mat-icon>
+        aria-label="Example icon-button with a menu">
+            <mat-icon>account_circle</mat-icon>
         </button>
         
         <mat-menu #menu="matMenu" color="primary">
@@ -31,5 +50,4 @@
             </button>
         </mat-menu>
     </div>
-
 </div>
