@@ -8,6 +8,7 @@ import { ContactComponent } from "./pages/contact/contact.component";
 import { LoginComponent } from "./pages/login/login.component";
 import { NotFoundComponent } from "./pages/not-found/not-found.component";
 import { SignupComponent } from "./pages/signup/signup.component";
+import { AppRoutingModule } from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SignupComponent } from "./pages/signup/signup.component";
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   //bootstrap: [AppComponent]
