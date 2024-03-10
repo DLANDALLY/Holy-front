@@ -1,0 +1,22 @@
+
+
+ .gallery-container {
+     display: flex;
+     overflow-x: auto;
+     white-space: nowrap;
+ }
+
+ .gallery-item {
+     flex-shrink: 0;
+     width: 300px;
+     /* Ajustez la largeur de chaque image selon vos besoins */
+     margin-right: 10px;
+     /* Marge entre les images */
+ }
+
+ .gallery-item img {
+     width: 100%;
+     height: auto;
+     border-radius: 8px;
+     /* Ajoutez une bordure arrondie si vous le souhaitez */
+ }
