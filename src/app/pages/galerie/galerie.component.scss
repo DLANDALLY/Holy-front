@@ -1,22 +1,35 @@
 
 
- .gallery-container {
-     display: flex;
-     overflow-x: auto;
-     white-space: nowrap;
- }
+.gallery-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
 
- .gallery-item {
-     flex-shrink: 0;
-     width: 300px;
-     /* Ajustez la largeur de chaque image selon vos besoins */
-     margin-right: 10px;
-     /* Marge entre les images */
- }
+.gallery-item {
+    flex-shrink: 0;
+    overflow: hidden;
+    
+    img {
+        height: 300px;
+        border-radius: 8px;
+        margin-right: 100px;
+        object-fit: cover;
+        /* ajuste l'image pour couvrir la boîte tout en préservant son ratio d'aspect */
+        display: block;
+    }
+}
 
- .gallery-item img {
-     width: 100%;
-     height: auto;
-     border-radius: 8px;
-     /* Ajoutez une bordure arrondie si vous le souhaitez */
- }
+h3 {
+    text-align: center;
+}
+
+.row {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.containe {
+    padding-left: 5%;
+    padding-bottom: 100px;
+}
