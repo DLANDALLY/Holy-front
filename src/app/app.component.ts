@@ -1,6 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding  } from '@angular/core';
 import { MenuComponent } from "./core/component/menu/menu.component";
 import { RouterOutlet } from '@angular/router';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 @Component({
     selector: 'app-root',

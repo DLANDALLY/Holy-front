@@ -1,4 +1,27 @@
 <div class="containe">
+    <!-- Diaporama pb animation à resoudre -->
+    <!-- <div class="carousel">
+        <img
+            *ngFor="let image of images; let i = index"
+            [@imageTransition]="(i === currentImageIndex) ? 'active' : null "
+            class="image" 
+            [src]="image.url" 
+            alt="Image">
+    </div> -->
+
+    <!-- Temporaire -->
+    <div class="scroll-container">
+        <div class="img-gallery based-size">
+            <img class="img-gallery" src="/assets/shootingPhoto/g_40_4sit93BPrn.jpg" alt="photo">
+            <img class="img-gallery" src="/assets/shootingPhoto/g_40_6JQoZ4FowR.jpg" alt="photo">
+            <img class="img-gallery" src="/assets/shootingPhoto/g_40_8CyZCbimmB.jpg" alt="photo">
+            <img class="img-gallery" src="/assets/shootingPhoto/g_40_iuzF8SHwSE.jpg" alt="photo">
+            <img class="img-gallery" src="/assets/shootingPhoto/g_40_WBsusaujbT.jpg" alt="photo">
+            <img class="img-gallery" src="/assets/shootingPhoto/g_40_mKijYcKpqj.jpg" alt="photo">
+        </div>
+    </div>
+
+    
     <!-- Long Metrage -->
     <div class="row">
         <div class="col xs12">
@@ -7,16 +30,15 @@
     </div>
     <div class="row">
         <div class="col xs4 gallery-item" style="margin-left: 10%;">
-            <img src="/assets/longMetrage/co5jBeCwHerfC0GPvxLH0D4qj5q.jpg" alt="Image 1">
+            <img class="img-category" src="/assets/longMetrage/co5jBeCwHerfC0GPvxLH0D4qj5q.jpg" alt="Image 1">
         </div>
         <div class="col xs4 gallery-item">
-            <img src="/assets/longMetrage/e3e38273924a2dd3dc557c7d379ee051.jpg" alt="Image 1">
+            <img class="img-category" src="/assets/longMetrage/e3e38273924a2dd3dc557c7d379ee051.jpg" alt="Image 1">
         </div>
         <div class="col xs4 gallery-item">
-            <img src="/assets/longMetrage/Pearl.jpg" alt="Image 1">
+            <img class="img-category" src="/assets/longMetrage/Pearl.jpg" alt="Image 1">
         </div>
         <!-- Ajoutez plus d'éléments .gallery-item au besoin -->
-    
     </div>
 
     <!-- Tournage clip video musiquee -->
@@ -27,19 +49,19 @@
     </div>
     <div class="gallery-container">
         <div class="gallery-item">
-            <img src="/assets/clipVideo/ab67616d0000b2735584cef27416228a72974d02.jpeg" alt="Image 1">
+            <img class="img-category" src="/assets/clipVideo/ab67616d0000b2735584cef27416228a72974d02.jpeg" alt="Image 1">
         </div>
         <div class="gallery-item">
-            <img src="/assets/clipVideo/maxresdefault-2.jpg" alt="Image 1">
+            <img class="img-category" src="/assets/clipVideo/maxresdefault-2.jpg" alt="Image 1">
         </div>
         <div class="gallery-item">
-            <img src="/assets/clipVideo/maxresdefault.jpg" alt="Image 1">
+            <img class="img-category" src="/assets/clipVideo/maxresdefault.jpg" alt="Image 1">
         </div>
         <div class="gallery-item">
-            <img src="/assets/clipVideo/TWICE2019_MNL_Poster-with-price_web_resized.jpg" alt="Image 1">
+            <img class="img-category" src="/assets/clipVideo/TWICE2019_MNL_Poster-with-price_web_resized.jpg" alt="Image 1">
         </div>
         <div class="gallery-item">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIF.4sujJWyldYwySsd%252fQal%252bOg%26pid%3DApi&f=1&ipt=90a15fb34a30621131249044d3b7e94deeb36709b9084d4701d52a9d7b178428&ipo=images"
+            <img class="img-category" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIF.4sujJWyldYwySsd%252fQal%252bOg%26pid%3DApi&f=1&ipt=90a15fb34a30621131249044d3b7e94deeb36709b9084d4701d52a9d7b178428&ipo=images"
                 alt="Image 2">
         </div>
     </div>

@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from "./app.component";
 import { GalerieComponent } from "./pages/galerie/galerie.component";
 import { MenuComponent } from "./core/component/menu/menu.component";
@@ -12,15 +13,15 @@ import { AppRoutingModule } from "./app-routing.module";
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 
+
 @NgModule({
   declarations: [],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
-    MatIconModule,    
-  ],
-  providers: [
+    MatIconModule, 
+    BrowserAnimationsModule,
     AppComponent,
     MenuComponent,
     GalerieComponent,
@@ -29,8 +30,9 @@ import {MatIconModule} from '@angular/material/icon';
     LoginComponent,
     NotFoundComponent,
     SignupComponent,
-    MatIconModule
+    MatIconModule 
   ],
+  providers: [],
   //bootstrap: [AppComponent]
 })
 export class AppModule { }
